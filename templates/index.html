@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Veri AI - Image Recognition & Deepfake Detection</title>
+</head>
+<body>
+    <h1>Welcome to Veri AI</h1>
+    <h2>Upload an image for recognition or deepfake detection</h2>
+
+    <form action="/recognize" method="post" enctype="multipart/form-data">
+        <label>Image Recognition:</label>
+        <input type="file" name="file">
+        <button type="submit">Upload and Recognize</button>
+    </form>
+
+    <form action="/detect_deepfake" method="post" enctype="multipart/form-data">
+        <label>Deepfake Detection:</label>
+        <input type="file" name="file">
+        <button type="submit">Upload and Detect</button>
+    </form>
+</body>
+</html>
